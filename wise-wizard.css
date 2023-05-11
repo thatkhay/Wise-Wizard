@@ -59,7 +59,7 @@ margin-bottom: 2rem;
     }
 
     .button:active{
-        box-shadow: 2px 2px 2px 2px hsl(150, 100%, 66%);
+        box-shadow: 1px 1px hsl(150, 78%, 86%), -1px -1px hsl(150, 78%, 86%);
           }
 
     .icon{
