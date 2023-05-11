@@ -1,38 +1,25 @@
 const adviceId = document.querySelector('.adviceId');
 const generatedAdvice = document.querySelector('.generatedAdvice');
 const button = document.querySelector('.button');
+let adviceIdString = 'ADVICE';
+let sign = '#';
 
-button.addEventListener('click', function(){
-    const apiUrl = 'https://api.adviceslip.com/advice';
+button.addEventListener('click', function() {
+  const apiUrl = `https://api.adviceslip.com/advice?${Date.now()}`;
 
-function getAdvice() {
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      const adviceSlip = data.slip.advice;
-      console.log(adviceSlip);
-      // do something with the advice slip, such as displaying it on a web page
-    })
-    .catch(error => console.error(error));
-}
+  function getAdvice() {
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const adviceSlip = data.slip;
+        adviceId.textContent = `${adviceIdString} ${sign}${adviceSlip.id}`;
+        generatedAdvice.textContent = `"${adviceSlip.advice}"`;
+      })
+      .catch(error => console.error(error));
+  }
 
-getAdvice();
+  getAdvice();
+});
 
 
-} )
 
-// const apiUrl = 'https://api.adviceslip.com/advice';
-
-// function getAdvice() {
-//   fetch(apiUrl)
-//     .then(response => response.json())
-//     .then(data => {
-//       const adviceSlip = data.slip.advice;
-//       console.log(adviceSlip);
-//       // do something with the advice slip, such as displaying it on a web page
-//     })
-//     .catch(error => console.error(error));
-// }
-
-// call the getAdvice function to retrieve a random advice slip
-// getAdvice();
