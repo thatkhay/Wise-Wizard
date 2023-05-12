@@ -1,4 +1,4 @@
-## Wise-Wizard
+### Wise-Wizard
 Wise Wizard
 Table of contents
 . Overview . Built with . What I learned . Optimization . Author . Acknowledgments
