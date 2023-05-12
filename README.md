@@ -1,26 +1,27 @@
-# Wise-Wizard
+## Wise-Wizard
 Wise Wizard
 Table of contents
 . Overview . Built with . What I learned . Optimization . Author . Acknowledgments
 
-Overview
+## Overview
 This is an app that generates random advices with advice slip API
 
-Built With
+## Built With
 HTML
 CSS
 VANILLA JS
 API (advice slip)
 
 
- What I learned
+## What I learned
  APIs
  
  
-Optimization
+## Optimization
 Use javascript frame works
 
-Author
+## Author
 DEV KHAY (That khay)
 
-Acknowledgments DEV KHAY
+##Acknowledgments 
+DEV KHAY, Advice slip Api
