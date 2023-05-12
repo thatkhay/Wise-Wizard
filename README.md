@@ -1,5 +1,5 @@
-### Wise-Wizard
-Wise Wizard
+
+### Wise Wizard
 Table of contents
 . Overview . Built with . What I learned . Optimization . Author . Acknowledgments
 
@@ -23,5 +23,5 @@ Use javascript frame works
 ## Author
 DEV KHAY (That khay)
 
-##Acknowledgments 
+## Acknowledgments 
 DEV KHAY, Advice slip Api
